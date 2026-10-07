@@ -1,0 +1,15 @@
+venv/
+__pycache__/
+*.pyc
+
+.env
+config.py
+
+secure_vault.db
+*.vault
+
+decrypted_*
+tampered_*
+*_backup*.py
+*_before_*.py
+main_old.py
