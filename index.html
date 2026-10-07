@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementation of Secure File Vault</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        .box {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Implementation of Secure File Vault</h1>
+
+    <div class="box">
+        <h2>Project Overview</h2>
+
+        <p>
+            A Python-based Secure File Vault that protects files using
+            AES-256-GCM encryption, SHA-256 integrity verification and
+            PBKDF2-HMAC-SHA256 key derivation.
+        </p>
+    </div>
+
+    <h2>Features</h2>
+
+    <ul>
+        <li>AES-256-GCM file encryption</li>
+        <li>SHA-256 integrity verification</li>
+        <li>PBKDF2-HMAC-SHA256 key derivation</li>
+        <li>Random salt and nonce generation</li>
+        <li>File encryption and decryption</li>
+        <li>Tampering detection</li>
+        <li>User registration and authentication</li>
+        <li>Email OTP verification</li>
+        <li>SQLite database</li>
+    </ul>
+
+    <h2>Cryptographic Techniques</h2>
+
+    <h3>AES-256-GCM</h3>
+
+    <p>
+        AES-256-GCM is used to encrypt the actual contents of files.
+        It provides confidentiality and authentication and detects
+        modification of encrypted data.
+    </p>
+
+    <h3>SHA-256</h3>
+
+    <p>
+        SHA-256 generates a fingerprint of the original file.
+        After decryption, the hash is calculated again and compared
+        with the original hash to verify file integrity.
+    </p>
+
+    <h3>PBKDF2-HMAC-SHA256</h3>
+
+    <p>
+        PBKDF2-HMAC-SHA256 derives a secure 256-bit encryption key
+        from the user's password using a random salt and 600,000 iterations.
+    </p>
+
+    <h2>Technologies Used</h2>
+
+    <p>
+        Python, AES-256-GCM, SHA-256, PBKDF2-HMAC-SHA256,
+        SQLite, CustomTkinter and Cryptography.
+    </p>
+
+    <h2>Project Modules</h2>
+
+    <ul>
+        <li>main.py</li>
+        <li>crypto_utils.py</li>
+        <li>file_manager.py</li>
+        <li>database.py</li>
+        <li>auth_manager.py</li>
+        <li>otp_manager.py</li>
+    </ul>
+
+    <h2>Author</h2>
+
+    <p>
+        <strong>MANYA M G</strong><br>
+        B.E. Computer Science and Engineering<br>
+        JSS Academy of Technical Education, Bengaluru
+    </p>
+
+    <h2>Source Code</h2>
+
+    <p>
+        <a href="https://github.com/manyamg132/SecureFileVault">
+            View Project on GitHub
+        </a>
+    </p>
+
+</body>
+</html>
